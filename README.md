@@ -29,7 +29,7 @@ Or Android 4.0 Ice Cream Sandwich + if you don't use [RenderScript](http://devel
         />
     ```
 
-3. In your `onCreate` method refer to the View and setup OnRefreshListener.
+3. In your `onCreate` method refer to the View and setup header image.
 	```java
     TwitterCoverListView listView = (TwitterCoverListView) findViewById(R.id.layout_listview);
         listView.setHeaderImage(BitmapFactory.decodeResource(getResources(), R.drawable.img_header));
