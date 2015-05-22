@@ -1,0 +1,4 @@
+<resources>
+    <!-- Default Parallax ImageView Height  -->
+    <dimen name="size_default_height">200dp</dimen>
+</resources>
