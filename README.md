@@ -3,6 +3,8 @@
 The Android version of [TwitterCover](https://github.com/cyndibaby905/TwitterCover)
 
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-TwitterCover--Android-brightgreen.svg?style=flat)](http://android-arsenal.com/details/1/1858)
+
 ## Requirements ##
 
 Android 4.2 Jelly Bean +
