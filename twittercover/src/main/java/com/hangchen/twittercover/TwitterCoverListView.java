@@ -23,7 +23,7 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 //  THE SOFTWARE.
 
-package com.example.hangchen.twittercover;
+package com.hangchen.twittercover;
 
 import android.content.Context;
 import android.graphics.Bitmap;

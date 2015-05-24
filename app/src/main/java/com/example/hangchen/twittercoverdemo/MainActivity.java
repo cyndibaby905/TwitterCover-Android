@@ -31,7 +31,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.widget.ArrayAdapter;
 
-import com.example.hangchen.twittercover.TwitterCoverListView;
+import com.hangchen.twittercover.TwitterCoverListView;
 
 public class MainActivity extends Activity {
 

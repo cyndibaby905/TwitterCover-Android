@@ -23,7 +23,7 @@ Or Android 4.0 Ice Cream Sandwich + if you don't use [RenderScript](http://devel
 2. Include the TwitterCoverListView in your layout.
 
 	```xml
-    <com.example.hangchen.twittercover.TwitterCoverListView
+    <com.hangchen.twittercover.TwitterCoverListView
         android:id="@+id/layout_listview"
         android:dividerHeight="1dp"
         android:layout_width="match_parent"
