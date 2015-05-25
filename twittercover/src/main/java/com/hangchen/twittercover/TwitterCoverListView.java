@@ -27,6 +27,7 @@ package com.hangchen.twittercover;
 
 import android.content.Context;
 import android.graphics.Bitmap;
+import android.os.AsyncTask;
 import android.renderscript.Allocation;
 import android.renderscript.Element;
 import android.renderscript.RenderScript;
@@ -89,10 +90,26 @@ public class TwitterCoverListView extends ListView implements OnScrollListener {
 
     }
 
-    public void setHeaderImage(Bitmap bitmap) {
+    public void setHeaderImage(final Bitmap bitmap) {
         mCoverView.setImageBitmap(bitmap);
-        mCoverMaskView.setImageBitmap(stackBlur(bitmap, 40));
+        mCoverMaskView.setImageBitmap(bitmap);
         mCoverMaskView.setAlpha(0);
+
+        new AsyncTask<Void, Void, Boolean>(
+
+        ) {
+            Bitmap mBluredBitmap;
+            @Override
+            protected Boolean doInBackground(Void... params) {
+                mBluredBitmap = stackBlur(bitmap,40);
+                return true;
+            }
+
+            @Override
+            protected void onPostExecute(Boolean aBoolean) {
+                mCoverMaskView.setImageBitmap(mBluredBitmap);
+            }
+        }.execute();
     }
 
     @Override
